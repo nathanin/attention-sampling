@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
+target_compile_features(patches PUBLIC cxx_std_11)
+
 # Search and find the packages required to make a tf extension, namely cuda (if
 # available) and tf.
 find_package(CUDA)

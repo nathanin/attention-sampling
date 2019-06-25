@@ -63,9 +63,9 @@ struct ExtractPatchesFunctor {
     );
 };
 
-//#if GOOGLE_CUDA
-//template <typename Eigen::GpuDevice, typename T, int SpatialDims>
-//struct ExtractPatchesFunctor {
+// #if GOOGLE_CUDA
+// template <typename Eigen::GpuDevice, typename T, int SpatialDims>
+// struct ExtractPatchesFunctor {
 //    void operator()(
 //        const Eigen::GpuDevice &d,
 //        ExtractPatchesShapes<SpatialDims> shapes,
@@ -73,8 +73,8 @@ struct ExtractPatchesFunctor {
 //        const int32 *offsets,
 //        T* output
 //    );
-//};
-//#endif
+// };
+// #endif
 
 
 #endif // EXTRACT_PATCHES_H
